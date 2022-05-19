@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+.boxx{
+  margin-top: 20px;
 }
 
 .App-logo {

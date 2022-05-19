@@ -11,13 +11,15 @@ function App() {
     return (
         <div className="App">
             <Nav/>
+            <div className="boxx">
+
             <Container>
                 {
                     open ? <Code/> : <Info/>
                 }
                 <Container>
                 <Button onClick={() => setOpen(!open)}  style={{
-                    margin:"10px 119px 0 5px"
+                    margin:"10px"
                 }} variant="success">
                     {
                         open ?
@@ -27,6 +29,8 @@ function App() {
                 </Button>
                 </Container>
             </Container>
+            </div>
+
         </div>
     );
 }

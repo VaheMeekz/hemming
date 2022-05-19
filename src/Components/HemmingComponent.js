@@ -114,17 +114,17 @@ const Code = () => {
 
         let data = intArr;
         //   var data = [0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0];
-        console.log('Arbitrary data: ' + data);
+        // console.log('Arbitrary data: ' + data);
         let hammingCode = prepare(data);
-        console.log('Hamming code of data: ' + hammingCode);
+        // console.log('Hamming code of data: ' + hammingCode);
         let garbledMessage = toggle(hammingCode, 10);
-        console.log('Garbled Hamming code: ' + garbledMessage);
+        // console.log('Garbled Hamming code: ' + garbledMessage);
         let index = find(garbledMessage);
-        console.log('Index of error (detected by an algorithm): ' + index);
+        // console.log('Index of error (detected by an algorithm): ' + index);
         let repaired = toggle(garbledMessage, index);
-        console.log('Repaired Hamming code: ' + repaired);
+        // console.log('Repaired Hamming code: ' + repaired);
         let recieved = extract(repaired);
-        console.log('Error-corrected data recieved: ' + recieved);
+        // console.log('Error-corrected data recieved: ' + recieved);
 
        setData({first:data,second:garbledMessage,third:index,for:repaired,five:recieved});
         setModalShow(true);

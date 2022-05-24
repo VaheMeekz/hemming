@@ -30,9 +30,9 @@ function MyVerticallyCenteredModal(props) {
                 {props.data && props.data !== null && props.data.second}
                 <hr />
 
-                <h4>Սխալի ինդեքս</h4>
-                {props.data && props.data !== null && props.data.third}
-                <hr />
+                {/*<h4>Սխալի ինդեքս</h4>*/}
+                {/*{props.data && props.data !== null && props.data.third}*/}
+                {/*<hr />*/}
 
                 <h4>Վերականգնված Հեմմինգի կոդը</h4>
                 {props.data && props.data !== null && props.data.for}
